@@ -1,4 +1,4 @@
-package telran.time;
+package telran.time.time;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -7,6 +7,7 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.TemporalAdjuster;
 import java.time.temporal.UnsupportedTemporalTypeException;
+import telran.time.*;
 class DateTimeTests {
 
 	@Test
@@ -36,7 +37,7 @@ class DateTimeTests {
 	@Test
 	void canadaCurrentTime() {
 		//displayCurrentTime("Europe/London");
-		//TODO display current date & time in all time zones related to Canada
+		//display current date & time in all time zones related to Canada
 		//Date / Time (HH:mm) / Time Zone name
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/YYYY / HH:mm / zzzz");
 		for(String zoneName: ZoneId.getAvailableZoneIds()) {
